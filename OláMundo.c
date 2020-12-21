@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> //Biblioteca para comando de input e output
 
 void main()
 {
