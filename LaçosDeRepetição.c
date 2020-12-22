@@ -10,11 +10,12 @@ void main()
         {Comando}
 
     Comando do while 
-    executa no minimo uma vez o codigo.
         do {Código}
         while(Condição)
+
     Comando for
-        for()    
+        for(variável, condição, incremento) 
+        {Comando}   
   */
 
  int i, n;
@@ -26,10 +27,19 @@ void main()
      printf("Vez numero: %i\n", i);
      i++;
  }
+ i = 0;
  do
  {
     printf("Opa: %i\n", i);
     i++;
  } while (i<=3); //se meu i <= 3 ele realiza o do novamente, porém o do é realizado no minimo uma vez.
  
-}
+ for (int f = 0; f <= 3; f++)
+ {
+     printf("Teste for\n");
+ }
+ 
+ 
+ }
+ 
+
