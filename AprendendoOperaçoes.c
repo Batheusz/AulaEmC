@@ -4,7 +4,7 @@
 void main()
 {
     // Operador de adição.
-        int num1, num2, soma1, soma2;
+        int num1, num2, soma1, soma2, a, b, c;
         num1 = 15;
         num2 = 10;
         soma1 = num1 + num2;
@@ -22,10 +22,20 @@ void main()
         int div1 =  num1 / num2; //Está sendo salvo somente o numero inteiro da divisão.
         int div2 =  100 / 2;
         printf("Divisao:\n%i\n%i\n", div1, div2);
-    /*Expressões
-        Multiplicação e Divisão possuem prioridade.
-        Parênteses possui prioridade.
+    /*Expressões ordem de prioridade:
+        1) ()
+        2) *, /, %.
+        3) +, -.
+        4) <, <=, >, >=.
+        5) ==, !=
     */
         float expresssao= ((num1 + num2) * num1)/ num2;
+        printf("Resultado da sua expressao eh: %.0f\n", expresssao);
+        a = 15;
+        b = 10;
+        c = 5;
+        expresssao =  a - b * c; // primeiro 5 * 10 depois 15 - 35.
+        printf("Resultado da sua expressao eh: %.0f\n", expresssao);
+        expresssao =  (a - b) * c; // primeiro 15 - 10 depois 5 * 5.
         printf("Resultado da sua expressao eh: %.0f\n", expresssao);
 }
