@@ -17,8 +17,17 @@ void main()
         printf("Digite a nota do aluno:\n>>>");
         scanf("%f", &nota[i]);
     }
-    for ( int d = 0; d < 3 ; d++)
+    for ( int i = 0; i < 3 ; i++)
     {
-        printf("Nota %i: %f\n", d + 1, nota[d]);
+        printf("Nota %i: %f\n", i + 1, nota[i]);
+    }
+    int vetor [2] [2];
+    for (int i = 0; i < 2; i++)
+    {
+        for (int j = 0; j < 2; j++)
+        {
+            printf("%i ", vetor [j]);
+        }
+        printf("\n");
     }
 }
