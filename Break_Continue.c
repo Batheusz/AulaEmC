@@ -9,14 +9,10 @@ void main()
     {
         //Quando executado saimos do ciclo e continuamos o for.
         if(x == 20)
-        {
             continue;
-        }
         //Quando executado saimos do laço for.
         if (x == 70)
-        {
             break;
-        }
         printf("%i ", x);
     }
 }

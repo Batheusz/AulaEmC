@@ -14,5 +14,4 @@ void main()
     printf("Digite seu raio:\n>>>");
     scanf("%f", &Raio);
     printf("Sua area eh: %f metros quadrados", Pi * pow(Raio,2));
-
 }
