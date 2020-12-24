@@ -30,4 +30,17 @@ void main()
         }
         printf("\n");
     }
+    
+    //Exercício
+    int A[10], B[10];
+    printf("Digite os valores de seu vetor:\n");
+    for (int i = 0; i < 10; i++)
+    {
+        scanf("%i", &A[i]);
+        B[i] = A[i] * 10;
+    }
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%i ", B[i]);
+    }
 }
