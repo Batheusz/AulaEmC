@@ -9,6 +9,7 @@ void main()
         char = %c
         string = %s
         módulo = %u
+        notação científica = %e
         endereço de memória = %x (hexadecimal)
         numero na base octal = %o
         notação científica = %E ou %e
