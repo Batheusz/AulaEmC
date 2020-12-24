@@ -6,6 +6,7 @@ struct Horario
 {
     int Horas, Minutos, Segundos;
 };
+struct Horario funcao(struct Horario Name);
 
 void main()
 {
@@ -24,7 +25,7 @@ void main()
        char NomeCompleto [];
    };
     //Agora deve-se atribuir esses dados a uma variável
-    struct NomeCompleto Cadastro;
+    /*struct NomeCompleto Cadastro;
     printf("Digite seu nome:\n>>>");
     scanf("%s", &Cadastro.Nome);
     printf("Digite seu sobrenome:\n>>>");
@@ -35,16 +36,16 @@ void main()
     strcat(Cadastro.NomeCompleto, " ");
     strcat(Cadastro.NomeCompleto, Cadastro.Sobrenome);
     printf("\n%s\n", Cadastro.NomeCompleto);
-    printf("\n%c\n", Cadastro.Sexo);
+    printf("\n%c\n", Cadastro.Sexo);*/
 
     struct Horario agora;
     agora.Horas = 10;
     agora.Minutos = 10;
     agora.Segundos = 30;
-    teste(agora);
+    funcao(agora);
 }
 
-struct Horario teste(struct Horario Name)
+struct Horario funcao(struct Horario Name)
 {
-    return Name;
+    printf("%i : %i : %i", Name.Horas, Name.Minutos, Name.Segundos);
 }
