@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+struct Horario
+{
+    int Horas, Minutos, Segundos;
+};
+
 void main()
 {
     /*
@@ -32,4 +37,14 @@ void main()
     printf("\n%s\n", Cadastro.NomeCompleto);
     printf("\n%c\n", Cadastro.Sexo);
 
+    struct Horario agora;
+    agora.Horas = 10;
+    agora.Minutos = 10;
+    agora.Segundos = 30;
+    teste(agora);
+}
+
+struct Horario teste(struct Horario Name)
+{
+    return Name;
 }
