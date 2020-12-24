@@ -9,7 +9,8 @@ void main()
         char = %c
         string = %s
         módulo = %u
-        endereço de memória = %p
+        endereço de memória = %x (hexadecimal)
+        numero na base octal = %o
         notação científica = %E ou %e
         imprimir porcentagem = %%
 
