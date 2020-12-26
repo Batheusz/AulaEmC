@@ -2,7 +2,7 @@
 #include <math.h>
 
 #define Pi 3.1415926
-//Macros sãoa compresa de numeros ou expressões para uma string.
+//Macros são a compresa de numeros ou expressões para uma string.
 //Pode criar mais linhas em macros usando o /
 #define AreaCirculo(raio) pow(raio,2) * Pi 
 #define Maior(x, y) x > y ? x : y
