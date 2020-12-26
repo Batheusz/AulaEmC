@@ -5,8 +5,8 @@ void main()
 {
     FILE *Escrever;
     Escrever = fopen("ManipulacaoDeArquivos.txt", "w");
-    //"r" Read = Ler, "w" Write = Escrever,"a" Attend
-    fprintf(Escrever,"Hello World!!\n");
+    //"r" Read = Ler, "w" Write = Escrever,"a" Append = Anexar
+    fprintf(Escrever,"Hello World!!");
     fclose(Escrever);
     //Ao compilar cria um arquivo com o nome ManipulacaoDeArquivos no mesmo local onde se encontra esse arquivo .c
     FILE *Ler;
@@ -14,7 +14,13 @@ void main()
     char Texto[99];
     while (fgets(Texto, 99, Ler) != NULL)
     {
-        printf("%s",Texto);
+        printf("%s\n",Texto);
     }
     fclose(Ler);
+    FILE *Anexar;
+    Anexar = fopen("ManipulacaoDeArquivos.txt", "a");
+    fprintf(Anexar,"\nOla!!\n");
+    fputs(Texto, Anexar);//Coloca string
+    fputc('a', Anexar);//Coloca char
+    fclose(Anexar);
 }
